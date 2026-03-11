@@ -1,0 +1,66 @@
+# robots.txt for Book Slump Rescue
+# Allow search engines to index public pages
+User-agent: *
+Allow: /
+Allow: /quiz
+Allow: /discover
+Allow: /shop
+Allow: /featured
+Allow: /clubs
+Allow: /similar
+Allow: /boutique
+Allow: /feed
+Allow: /book-reviews
+Allow: /interviews
+Allow: /authors/
+Allow: /kids
+
+# Disallow API endpoints and user-specific pages
+Disallow: /api/
+Disallow: /admin
+Disallow: /profile
+Disallow: /challenge
+Disallow: /lists
+Disallow: /quotes
+Disallow: /series
+Disallow: /year-in-review
+Disallow: /saved
+Disallow: /author-dashboard
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Crawl delay for remaining bots
+User-agent: *
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: /sitemap.xml

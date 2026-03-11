@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm, cozy, bookish palette */
+  --background: 35 30% 96%;     /* Creamy off-white */
+  --foreground: 25 15% 25%;     /* Soft dark brown */
+  
+  --card: 0 0% 100%;
+  --card-foreground: 25 15% 25%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 25 15% 25%;
+  
+  --primary: 28 65% 45%;        /* Deep terracotta/leather */
+  --primary-foreground: 35 30% 96%;
+  
+  --secondary: 35 20% 90%;      /* Subtle beige */
+  --secondary-foreground: 28 40% 35%;
+  
+  --muted: 35 20% 90%;
+  --muted-foreground: 25 10% 55%;
+  
+  --accent: 45 40% 92%;         /* Paper-like accent */
+  --accent-foreground: 28 65% 45%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 35 15% 85%;
+  --input: 35 15% 85%;
+  --ring: 28 65% 45%;
+  
+  --radius: 0.75rem;
+  
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+.dark {
+  /* Cozy dark mode - library at night */
+  --background: 25 20% 12%;     /* Deep warm charcoal */
+  --foreground: 35 20% 90%;     /* Soft parchment */
+  
+  --card: 25 20% 16%;
+  --card-foreground: 35 20% 90%;
+  
+  --popover: 25 20% 16%;
+  --popover-foreground: 35 20% 90%;
+  
+  --primary: 28 60% 55%;        /* Lighter leather/amber */
+  --primary-foreground: 25 20% 12%;
+  
+  --secondary: 25 15% 20%;
+  --secondary-foreground: 35 20% 90%;
+  
+  --muted: 25 15% 20%;
+  --muted-foreground: 35 10% 65%;
+  
+  --accent: 28 30% 25%;
+  --accent-foreground: 35 20% 90%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 25 15% 25%;
+  --input: 25 15% 25%;
+  --ring: 28 60% 55%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-medium tracking-tight text-balance;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/30 transition-colors;
+}
+
+/* Book Clubs - Dark Academia Theme */
+.clubs-page-bg {
+  @apply bg-background;
+}
+
+.clubs-heading {
+  font-family: var(--font-display);
+  @apply tracking-tight;
+}
+
+.clubs-accent-text {
+  color: hsl(28, 65%, 45%);
+}
+.dark .clubs-accent-text {
+  color: hsl(38, 60%, 60%);
+}
+
+.clubs-card {
+  @apply border border-border/60 shadow-sm;
+  transition: box-shadow 0.2s ease;
+}
+.clubs-card:hover {
+  box-shadow: 0 4px 16px rgba(139, 90, 43, 0.08);
+}
+.dark .clubs-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.clubs-banner-placeholder {
+  background: linear-gradient(135deg, hsl(35, 25%, 92%) 0%, hsl(28, 20%, 88%) 100%);
+}
+.dark .clubs-banner-placeholder {
+  background: linear-gradient(135deg, hsl(25, 20%, 18%) 0%, hsl(28, 25%, 14%) 100%);
+}
+
+.clubs-current-read {
+  border-left: 3px solid hsl(38, 60%, 55%);
+}
+
+.clubs-btn-primary {
+  @apply bg-primary text-primary-foreground hover:opacity-90 transition-opacity;
+}
+
+.clubs-badge {
+  @apply text-xs;
+}
+
+.clubs-badge-member {
+  @apply bg-green-100 text-green-700 border-green-200;
+}
+.dark .clubs-badge-member {
+  @apply bg-green-900/30 text-green-300 border-green-800;
+}
+
+.clubs-input {
+  @apply border-border/80 focus-visible:ring-primary/30;
+}
+
+.clubs-avatar {
+  @apply ring-1 ring-border/50;
+}
+
+/* iOS safe area support */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
