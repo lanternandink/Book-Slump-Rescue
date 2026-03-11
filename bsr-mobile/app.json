@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Book Slump Rescue",
+    "slug": "book-slump-rescue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "bookslumprescue",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fdf6ee"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bookslumprescue.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access is not used by this app.",
+        "NSMicrophoneUsageDescription": "Microphone access is not used by this app."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fdf6ee"
+      },
+      "package": "com.bookslumprescue.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "react-native-webview"
+    ]
+  }
+}

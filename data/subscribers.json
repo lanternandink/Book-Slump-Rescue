@@ -1,0 +1,22 @@
+[
+  {
+    "id": "258d0822-3734-4ce5-a88a-0b8391012847",
+    "name": "Test Reader",
+    "email": "test.reader@example.com",
+    "subscriptions": [
+      "Community Corner",
+      "First Chapter Friday"
+    ],
+    "joinedAt": "2026-02-19T05:23:29.165Z"
+  },
+  {
+    "id": "185720ce-2f2d-4066-83ce-24efb3756a7d",
+    "name": "Reader Test User",
+    "email": "readertest_OZv2DtI9@example.com",
+    "subscriptions": [
+      "Community Corner",
+      "First Chapter Friday"
+    ],
+    "joinedAt": "2026-02-19T05:24:41.860Z"
+  }
+]

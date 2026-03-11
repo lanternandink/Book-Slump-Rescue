@@ -1,0 +1,11 @@
+[
+  {
+    "id": "a5f74d0f-ad34-4c4d-86bc-ab4c10c4541e",
+    "bookTitle": "Test Book",
+    "authorName": "Test Author",
+    "firstChapter": "Chapter 1: It was a dark and stormy night...",
+    "contactEmail": "test@example.com",
+    "status": "pending",
+    "timestamp": "2026-02-19T05:11:03.940Z"
+  }
+]

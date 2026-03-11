@@ -1,0 +1,32 @@
+{
+  "packageId": "com.bookslumprescue.app",
+  "host": "book-slump-rescue.replit.app",
+  "name": "Book Slump Rescue",
+  "launcherName": "BookSlump",
+  "display": "standalone",
+  "themeColor": "#b5651d",
+  "navigationColor": "#b5651d",
+  "navigationColorDark": "#8b4513",
+  "navigationDividerColor": "#b5651d",
+  "navigationDividerColorDark": "#8b4513",
+  "backgroundColor": "#fdf6ee",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://book-slump-rescue.replit.app/icon-512.png",
+  "maskableIconUrl": "https://book-slump-rescue.replit.app/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "bookslumprescue"
+  },
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://book-slump-rescue.replit.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "orientation": "portrait"
+}

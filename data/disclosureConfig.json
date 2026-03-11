@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "sponsored": "Sponsored Feature",
+    "affiliate": "Affiliate Link",
+    "promotional": "Paid Promotion"
+  },
+  "tooltips": {
+    "sponsored": "This content is a paid sponsored feature.",
+    "affiliate": "This is an affiliate link; we may earn a small commission at no extra cost to you.",
+    "promotional": "This content is a paid promotion."
+  },
+  "footerNotice": "Some content on BookSlumpRescue may be sponsored or contain affiliate links. See our Disclosure Policy.",
+  "policyLastUpdated": "2026-02-19",
+  "policySections": {
+    "affiliateLinks": "Some links on BookSlumpRescue are affiliate links. This means we may earn a small commission if you make a purchase through these links, at no additional cost to you. These commissions help support the maintenance and development of our platform. Affiliate relationships do not influence our editorial recommendations or quiz-driven book suggestions.",
+    "sponsoredFeatures": "Authors and publishers may pay for spotlight placement, featured positions, or newsletter inclusion on BookSlumpRescue. All sponsored content is clearly marked with a \"Sponsored Feature\" label. Sponsorships do not affect our organic recommendation algorithm or quiz results.",
+    "adTransparency": "All paid advertisements and promotions on BookSlumpRescue are clearly marked with a \"Paid Promotion\" label. We believe in full transparency so our readers can always distinguish between organic recommendations and paid content.",
+    "contact": "If you have any questions about our disclosure practices, affiliate relationships, or sponsored content, please reach out to us at contact@bookslumprescue.com."
+  }
+}
